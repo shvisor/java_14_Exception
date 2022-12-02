@@ -5,7 +5,7 @@ import ru.netology.exception.AlreadyExistsException;
 import ru.netology.exception.NotFoundException;
 
 public class ProductRepository {
-    Product[] products = new Product[0];
+    private Product[] products = new Product[0];
 
     public void save(Product product) {
         if (findById(product.getId()) != null) {
